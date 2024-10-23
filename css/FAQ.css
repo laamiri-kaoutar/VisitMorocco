@@ -1,4 +1,5 @@
 * {
+    font-family: "Poppins", sans-serif;
     margin: 0px;
     border: 0px;
 }
@@ -50,7 +51,7 @@ main {
     align-items: center;
 }
 .question_section{
-    width: 60.125rem; /* Converted from 962px */
+    width: 90%;
     height: 24.4375rem; /* Converted from 391px */
     flex-shrink: 0;
     background-color: #230902;
@@ -60,10 +61,29 @@ main {
 
 #search_text{
     background-color: white;
-    width: 18rem;
+    width: 16.5rem;
     height: 2rem;
     border-radius: 30px;
+    margin-right: 5%;
+
 }
-#search_botton{
-    color: white;
+#send{
+    border-radius: 29px;
+    text-align: center;
+    align-content: center;
+    background-color: white;
+    width: 5rem;
+    height: 2rem;
+}
+.text_section{
+    margin-bottom: 3%;
+    margin-top: -5%;
+    margin-left: 7%;
+}
+.search_section{
+    display: flex;
+    flex-direction: row;
+    margin-left: 7%;
+    margin-right: 3%;
+    
 }
