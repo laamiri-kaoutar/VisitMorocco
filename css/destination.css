@@ -1,108 +1,182 @@
-*
-{
-    box-sizing:border-box;
-    font-family: "Poppins", sans-serif;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
 }
-body
-{
-    width: 100%;
-    background-color: #230902;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  width: 100%;
+  background-color: #230902;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* start City Carousel Section */
-.weper-image-swep
-{
-    width: 90%;
-
+.weper-image-swep {
+  width: 90%;
 }
 
 /* image style */
 
-.image_slider
-{
-    width: 100%;
-    height: 376px;
-    border-radius: 32px;
-
+.image_slider {
+  width: 100%;
+  height: 376px;
+  border-radius: 32px;
 }
-.image_slider img
-{
-    width: 100%;
-    height:376px;
-    background-repeat: no-repeat;
-    border-radius: 32px;
-    background-size:contain;
-
-
+.image_slider img {
+  width: 100%;
+  height: 376px;
+  background-repeat: no-repeat;
+  border-radius: 32px;
+  background-size: contain;
 }
-.slider-image
-{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+.slider-image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* text style */
-.texte-image-swep1
-{
-    width: 80%;
-    position: absolute;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    /* top: 87px; */
+.texte-image-swep1 {
+  width: 80%;
+  position: absolute;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* top: 87px; */
 }
 
-.texte-image-swep1 h1
-{
-    font-size: 2.5rem;
-    /* height: 0px; */
+.texte-image-swep1 h1 {
+  font-size: 2.5rem;
+  /* height: 0px; */
 }
-.texte-image-swep1 p
-{
-    font-size: 1.25rem;
+.texte-image-swep1 p {
+  font-size: 1.25rem;
 }
 
-.texte-image-swep1 a
-{
-    color: #552E10;
-    background-color: #fff;
-    font-size: 0.938rem;
-    text-decoration: none;
-    width: 169px;
-    height: 35px;
-    border-radius: 12px;
-    padding: 10px;
-    align-self: center;
-    text-align: center;
+.texte-image-swep1 a {
+  color: #552e10;
+  background-color: #fff;
+  font-size: 0.938rem;
+  text-decoration: none;
+  width: 169px;
+  height: 35px;
+  border-radius: 12px;
+  padding: 10px;
+  align-self: center;
+  text-align: center;
 }
 
 /* style next */
-.next_image
-{
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    color: #fff;
-    font-size: 4rem;
+.next_image {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  color: #fff;
+  font-size: 4rem;
 }
 /* css slider */
 
-
-
-
-
-
-
 /* end City Carousel Section */
+
+/* START Cities Information Section && pagenation */
+.cities-section{
+    height: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 80px 80px 0 0;
+    justify-content: space-around;
+}
+
+.city-card { 
+  position: relative;
+  color: #fff;
+  width: 85%;
+  border-radius: 32px;
+  display: flex;
+  gap: 3%;
+  justify-content: center;
+  align-items: center;
+  margin: 1.3rem 0;
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../images/mosque.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(2px);
+  z-index: 0;
+  border-radius: 32px;
+}
+
+.exposure{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    border-radius: 32px;
+    background-color: #0000002d;
+}
+
+.city-image {
+  width: 30%;
+  height: fit-content;
+  border-radius: 16px;
+  align-content: center;
+  z-index: 2;
+  margin: 1.3rem 0;
+}
+
+
+.city-image img{
+    width: 100%;
+    height: auto;
+  border-radius: 16px;    
+}
+
+.city-content {
+  width: 55%;
+  margin: 1.3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 2;
+}
+.city-content button {
+  border: none;
+  border-radius: 16px;
+  background-color: #fff;
+  color: #000000;
+  padding: .5em 1.5em;
+  align-self: self-end;
+  font-size: medium;
+  font-weight: 600;
+}
+.city-content p{
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+.city-content h2{
+    font-size: 1.5rem;
+    font-weight: 750;
+}
+
+/* END Cities Information Section && pagenation */
