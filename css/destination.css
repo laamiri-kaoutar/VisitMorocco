@@ -1,0 +1,108 @@
+*
+{
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    width: 100%;
+    background-color: #230902;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* start City Carousel Section */
+.weper-image-swep
+{
+    width: 90%;
+
+}
+
+/* image style */
+
+.image_slider
+{
+    width: 100%;
+    height: 376px;
+    border-radius: 32px;
+
+}
+.image_slider img
+{
+    width: 100%;
+    height:376px;
+    background-repeat: no-repeat;
+    border-radius: 32px;
+    background-size:contain;
+
+
+}
+.slider-image
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* text style */
+.texte-image-swep1
+{
+    width: 80%;
+    position: absolute;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* top: 87px; */
+}
+
+.texte-image-swep1 h1
+{
+    font-size: 2.5rem;
+    /* height: 0px; */
+}
+.texte-image-swep1 p
+{
+    font-size: 1.25rem;
+}
+
+.texte-image-swep1 a
+{
+    color: #552E10;
+    background-color: #fff;
+    font-size: 0.938rem;
+    text-decoration: none;
+    width: 169px;
+    height: 35px;
+    border-radius: 12px;
+    padding: 10px;
+    align-self: center;
+    text-align: center;
+}
+
+/* style next */
+.next_image
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    color: #fff;
+    font-size: 4rem;
+}
+/* css slider */
+
+
+
+
+
+
+
+/* end City Carousel Section */
