@@ -57,6 +57,18 @@ main {
     background-color: #230902;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.questions{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.answer{
+    max-width: 70%;
 }
 
 #search_text{
@@ -86,4 +98,14 @@ main {
     margin-left: 7%;
     margin-right: 3%;
     
+}
+
+p{
+    color: aliceblue;
+}
+details summary{
+    color: aliceblue;
+}
+details{
+    width: 80%;
 }
