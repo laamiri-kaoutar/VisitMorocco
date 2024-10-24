@@ -130,26 +130,26 @@ body {
 
 /* START Cities Information Section && pagenation */
 .cities-section{
-    height: 900px;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
     border-radius: 80px 80px 0 0;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 
 .city-card { 
   position: relative;
   color: #fff;
-  width: 85%;
-  border-radius: 32px;
+  width: 90%;
+  border-radius: 2rem;
   display: flex;
-  gap: 3%;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
-  margin: 1.3rem 0;
+  margin: .8rem 0;
 }
 .background {
   position: absolute;
@@ -157,13 +157,27 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("../images/mosque.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   filter: blur(2px);
   z-index: 0;
   border-radius: 32px;
+}
+#fes{
+  background-image: url("../images/fes.png");
+}
+#sawira{
+  background-image: url("../images/sawira.png");
+}
+#chaouen{
+  background-image: url("../images/chouen.png");
+}
+#agadir{
+  background-image: url("../images/agadir.png");
+}
+#casa{
+  background-image: url("../images/mosque.png");
 }
 
 .exposure{
@@ -178,47 +192,56 @@ body {
 }
 
 .city-image {
-  width: 30%;
-  height: fit-content;
+  width: 23%;
+  height:fit-content ;
   border-radius: 16px;
   align-content: center;
   z-index: 2;
-  margin: 1.3rem 0;
+  margin: 1rem 0;
 }
 
-
 .city-image img{
-    width: 100%;
+    width: auto;
+    max-height: 9rem ;
     height: auto;
-  border-radius: 16px;    
+    border-radius: 16px;    
 }
 
 .city-content {
   width: 55%;
-  margin: 1.3rem 0;
+  margin: 1rem 0;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: .4rem;
   z-index: 2;
+  height: fit-content;
 }
 .city-content button {
   border: none;
   border-radius: 16px;
   background-color: #fff;
-  color: #000000;
+  color: #230902;
   padding: .5em 1.5em;
   align-self: self-end;
-  font-size: medium;
-  font-weight: 600;
+  font-size: 0.813rem;
+  font-weight: 550;
+  transition: 0.5s;
+}
+.city-content button:hover {
+  cursor: pointer;
+  background-color: #230902;
+  color:#fff;
+  
 }
 .city-content p{
-    font-size: 1em;
-    font-weight: 400;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
+    font-size: medium;
+    font-weight: 300;
 }
 .city-content h2{
-    font-size: 1.5rem;
-    font-weight: 750;
+    font-size: 1.875rem;
+    font-weight: 800;
+    line-height: normal;
 }
 
 /* END Cities Information Section && pagenation */
