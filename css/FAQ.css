@@ -1,13 +1,75 @@
+body {
+    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #230902;
+    margin: 0px;
+}
+
 * {
     font-family: "Poppins", sans-serif;
-    margin: 0px;
-    border: 0px;
 }
-body{
-    background-color: #230902;
+
+/* <!-- header start --> */
+.nav-box{
+    width: 100%;
+    background-color: #552E10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.nav {
+    width: 95%;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+.nav img {
+    width: 150px;
+}
+
+.ul-1 li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 32px;
+}
+
+.ul-1 a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.ul-2 a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.ul-2 li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+.ul-2-1 a {
+    border-radius: 12px;
+    background: #FFF;
+    padding: 8px 17px;
+    border: 1px solid #FFF;
+    color: #552E10;
+}
+
+.ul-2-2 a{
+    border-radius: 12px;
+    border: 1px solid #FFF;
+    background: #552E10;
+    padding: 8px;
+}
+/* <!-- header finish --> */
 main {
-    margin-top: 5%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -15,12 +77,12 @@ main {
 }
 #header_text{
     color: white;
-    font-size: 60px;
+    font-size: 3.5rem;
     font-weight: bold;
 }
 
 .main_div {
-    width: 95%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,6 +98,7 @@ main {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
 }
@@ -59,7 +122,7 @@ main {
     border-bottom-right-radius: 30px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 .questions{
     width: 80%;
@@ -76,7 +139,6 @@ main {
     width: 16.5rem;
     height: 2rem;
     border-radius: 30px;
-    margin-right: 5%;
 
 }
 #send{
@@ -88,16 +150,13 @@ main {
     height: 2rem;
 }
 .text_section{
-    margin-bottom: 3%;
-    margin-top: -5%;
-    margin-left: 7%;
+    width: 50%;
 }
 .search_section{
     display: flex;
     flex-direction: row;
-    margin-left: 7%;
-    margin-right: 3%;
-    
+    align-items: center;
+    gap: 3rem;
 }
 
 p{
@@ -108,4 +167,10 @@ details summary{
 }
 details{
     width: 80%;
+}
+.test{
+    height: 83%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
 }
