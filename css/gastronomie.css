@@ -136,6 +136,9 @@ header {
 
 /* about end */
 
+
+/* food cards start */
+
 .food-cards{
   background-color: #ffffff;
   width: 100%;
@@ -148,19 +151,25 @@ border-top-right-radius: 50px ;
 
 
 .cards{
-  margin: 25px 140px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
 }
 
 
 .card{
 border: 1px solid black;
 border-radius: 20px;
-  width: 220px;
-  height: 260px;
+  width: 250px;
+  height: 270px;
    overflow: hidden;
   position: relative;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0); 
 }
+
 
 .card-poster{
    background-size: contain;
@@ -185,41 +194,33 @@ padding-top: 15px;
 
 
 .card:hover .card-body {
-  bottom: 0 ;
+  bottom: -9px ;
 }
 
 
 .card-title{   
   text-transform: uppercase;
   font-weight: 700;
+  ;
 
 }
 .card-desc{
   padding-top: 15px;
   font-size: 10px;
   font-weight: 400;
+  padding-bottom: 26px;
 
 }
 
-.Launch{
-  margin-top: 80px;
-  font-weight: 450;
-  background-color: transparent;
-  border-color:rgb(255, 255, 255) ;
-  color: rgb(255, 255, 255);   
-   padding: 2px 25px;
-  cursor: pointer;
-  border-radius: 15px;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+.card-body a {
+  background-color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 12px;
+  color: #230902;
+  text-decoration: none;
+  font-size: 13px;
+ margin-left: 57px;
 
 }
-.Launch i{
-  padding-right: 5px;
-}
 
-.Launch:hover{
-  background-color:#e7e7e7;
-color: rgb(29, 3, 48);
-transform: scale(1.03);
-
-}
+/* food cards end */
