@@ -136,7 +136,7 @@ header {
 
 /* about end */
 
-#games{
+.food-cards{
   background-color: #ffffff;
   width: 100%;
 border-top-left-radius: 50px ;
@@ -148,9 +148,7 @@ border-top-right-radius: 50px ;
 
 
 .cards{
-  margin: 25px 60px;
-  
- 
+  margin: 25px 140px;
 }
 
 
@@ -158,7 +156,7 @@ border-top-right-radius: 50px ;
 border: 1px solid black;
 border-radius: 20px;
   width: 220px;
-  height: 240px;
+  height: 260px;
    overflow: hidden;
   position: relative;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0); 
@@ -170,20 +168,16 @@ border-radius: 20px;
 }
 
 .card-body{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   height: 100%;
-  right:   0;
-  bottom:  -100%;
+  bottom:  -80%;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.151);
  backdrop-filter: blur(2px) ;
   border-radius: 20px;
   color: white;
-  padding: 30px;
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 15px;
   transition: 0.5s;
   
  
@@ -196,18 +190,19 @@ border-radius: 20px;
 
 
 .card-title{   
-  margin-top: -10px; 
   text-transform: uppercase;
   font-weight: 700;
 
 }
 .card-desc{
+  padding-top: 15px;
   font-size: 10px;
   font-weight: 400;
-  margin-top: 2px;
+
 }
 
 .Launch{
+  margin-top: 80px;
   font-weight: 450;
   background-color: transparent;
   border-color:rgb(255, 255, 255) ;
@@ -215,7 +210,6 @@ border-radius: 20px;
    padding: 2px 25px;
   cursor: pointer;
   border-radius: 15px;
-  margin-top: 14px ;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
 
 }
