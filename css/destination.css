@@ -14,31 +14,59 @@ body {
 }
 
 /* start City Carousel Section */
-.weper-image-swep {
-  width: 90%;
+
+.weper-image-swep
+{
+    width: 90%;
+    overflow: hidden;
 }
 
 /* image style */
 
-.image_slider {
-  width: 100%;
-  height: 376px;
-  border-radius: 32px;
+
+.image_slider
+{
+    
+    width: 100%;
+    height: 376px;
+    border-radius: 25px;
+    position: relative;
+
 }
-.image_slider img {
-  width: 100%;
-  height: 376px;
-  background-repeat: no-repeat;
-  border-radius: 32px;
-  background-size: contain;
+.image_slider div
+{
+    position: absolute;
+    background-color: #00000062;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    top: 0;
 }
-.slider-image {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.image_slider img
+{
+    width: 100%;
+    height:376px;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    background-size:contain;
+    object-fit: cover;
+    object-position: center;
+
+
+
+
 }
+.slider-image
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: #fff solid;
+    border-radius: 28px;
+
+ }
 
 /* text style */
 .texte-image-swep1 {
@@ -52,9 +80,10 @@ body {
   /* top: 87px; */
 }
 
-.texte-image-swep1 h1 {
-  font-size: 2.5rem;
-  /* height: 0px; */
+.texte-image-swep1 h1
+{
+    font-size: 2.5rem;
+    height: 60px;
 }
 .texte-image-swep1 p {
   font-size: 1.25rem;
@@ -73,15 +102,28 @@ body {
   text-align: center;
 }
 
-/* style next */
-.next_image {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  color: #fff;
-  font-size: 4rem;
+   /* style next */
+.contner-image-center
+{
+  position: relative;
 }
+.next_image
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    color: #fff;
+    font-size: 4rem;
+}
+
+.next_image a
+{
+    color: #fff;
+
+}
+
+
 /* css slider */
 
 /* end City Carousel Section */
