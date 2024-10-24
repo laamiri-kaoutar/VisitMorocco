@@ -11,20 +11,20 @@ body {
 }
 
 /* <!-- header start --> */
-.nav-box{
+.nav-box {
     width: 100%;
     background-color: #552E10;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .nav {
-    width: 95%;
+    width: 90%;
     height: 88px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 100px;
+    justify-content: space-between;
 }
 
 .nav img {
@@ -61,10 +61,105 @@ body {
     color: #552E10;
 }
 
-.ul-2-2 a{
+.ul-2-2 a {
     border-radius: 12px;
     border: 1px solid #FFF;
     background: #552E10;
     padding: 8px;
 }
+
 /* <!-- header finish --> */
+/* <!-- main start --> */
+
+/* <!-- about start --> */
+.about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img {
+    display: flex;
+    width: 90%;
+    height: 500px;
+    margin: 4%;
+    border-radius: 32px;
+    border: 2px solid white;
+    background-image: url('/images/about-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-1 {}
+
+h2 {
+    margin: -27px;
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.name {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: -10px;
+}
+
+.name-0 {
+    display: flex;
+    flex-direction: column;
+    line-height: 65px;
+    margin-top: 60px;
+}
+
+.name-1 {
+    color: #FFF;
+    font-size: 75px;
+    font-weight: 800;
+    margin: 0px 10%;
+}
+
+.name-2 {
+    color: #FFF;
+    font-size: 60px;
+    font-weight: 800;
+    margin: 0px 10%;
+}
+
+.descri p {
+    width: 80%;
+    justify-self: center;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin: 0px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 65px;
+}
+
+.button a {
+    color: #552E10;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 0.6%;
+    border-radius: 12px;
+}
+
+/* <!-- about finish --> */
+
+
+/* <!-- main finish --> */
