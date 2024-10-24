@@ -90,7 +90,7 @@ main {
 }
 
 .image_div {
-    background-image: url("/images/file.jpg");
+    background-image: url("/VisitMorocco/images/file.jpg");
     width: 90%;
     height: 29.9375rem;
     background-color: bisque;
@@ -112,6 +112,7 @@ main {
     background-color: rgb(255, 255, 255);
     justify-content: center;
     align-items: center;
+    border-radius: 0px 0px 30px 30px;
 }
 .question_section{
     width: 90%;
@@ -178,3 +179,71 @@ details{
     display: flex;
     flex-direction: column;
 }
+footer
+{
+  width: 100%;
+  background-color: #552E10;
+  color: #fff;
+  min-width: 359px;
+  padding: 16px 0;
+}
+
+footer h1
+{
+  font-size: 1.563rem;
+}
+footer p
+{
+  margin-top: 10PX;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+
+
+.footer-contaner
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  
+
+}
+.textQuickLinks
+{
+  height: 204px;
+
+  display: flex;
+  flex-direction:column;
+  gap: 32px;
+}
+
+.textQuickLinks div ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.textQuickLinks div ul li a
+{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  height: 30px;
+}
+
+.textQuickLinks div select
+{
+ font-size: 1.25rem;
+ width: 130PX;
+}
+
+.line-h
+{
+  width: 1px;
+  height: 200px;
+  background-color: #fff;
+}
+
+/* end footer */

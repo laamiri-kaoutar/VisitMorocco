@@ -87,7 +87,7 @@ body {
     margin: 4%;
     border-radius: 32px;
     border: 2px solid white;
-    background-image: url('/images/about-img.jpg');
+    background-image: url('../images/about-img.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
