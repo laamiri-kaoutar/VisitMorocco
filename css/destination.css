@@ -201,7 +201,7 @@ body {
 }
 
 .city-image img{
-    width: auto;
+    width: 100%;
     max-height: 9rem ;
     height: auto;
     border-radius: 16px;    
@@ -234,14 +234,13 @@ body {
   
 }
 .city-content p{
-    letter-spacing: 0.02em;
+    /* letter-spacing: 0.02em; */
     font-size: medium;
     font-weight: 300;
 }
 .city-content h2{
-    font-size: 1.875rem;
-    font-weight: 800;
-    line-height: normal;
+    /* font-size: 1.5rem; */
+    /* font-weight: 600; */
 }
 
 /* END Cities Information Section && pagenation */
