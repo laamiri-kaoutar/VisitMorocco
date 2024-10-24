@@ -11,6 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 32px;
 }
 
 /* start City Carousel Section */
@@ -222,3 +223,43 @@ body {
 }
 
 /* END Cities Information Section && pagenation */
+
+
+
+/* start footer */
+footer
+{
+  width: 100%;
+  background-color: #552E10;
+  color: #fff;
+}
+
+footer p
+{
+  text-align: center;
+}
+
+
+
+.footer-contaner
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+
+}
+.textQuickLinks div ul{
+  list-style-type: none;
+}
+.textQuickLinks div ul li a
+{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  height: 30px;
+}
+
+
+
+/* end footer */
