@@ -130,13 +130,14 @@ body {
 
 /* START Cities Information Section && pagenation */
 .cities-section{
+  position: relative;
     height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
-    border-radius: 80px 80px 0 0;
+    border-radius: 32px 32px 0 0;
     /* justify-content: space-around; */
 }
 
@@ -242,5 +243,49 @@ body {
     /* font-size: 1.5rem; */
     /* font-weight: 600; */
 }
+
+
+/* start pagination  */
+ input[type="radio"] {
+  display: none;
+}
+.pagination{
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+ input[type="radio"][id="page1"]:checked ~ .sex,
+ input[type="radio"][id="page1"]:checked ~ .five,
+ input[type="radio"][id="page1"]:checked ~ .four {
+  display: none;
+}
+input[type="radio"][id="page2"]:checked ~ .one,
+input[type="radio"][id="page2"]:checked ~ .two,
+input[type="radio"][id="page2"]:checked ~ .tree {
+  display: none;
+}
+
+ .pagination label {
+  background-color: #fff;
+  color: #552e10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
+  padding: 10px;
+  border-radius: 1rem;
+  border: #aa8a14 2px solid;
+}
+
+input[type="radio"][id="page2"]:checked ~ #label1 {
+  background-color: #552e10; 
+  color: #fff;
+}
+
+
+/* end pagination */
+
 
 /* END Cities Information Section && pagenation */
