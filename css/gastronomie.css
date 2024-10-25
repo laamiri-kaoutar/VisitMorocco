@@ -6,8 +6,7 @@
   margin: 0%;
   scroll-behavior: smooth;
 }
-
-body {
+body{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,17 +15,18 @@ body {
   background-color: #230902;
   gap: 32px;
 }
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #230902;
-  margin: 0px;
-}
+
+ 
 
 /* <!-- header start --> */
-.nav-box {
+header{
+  width: 100%;
   position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.nav-box {
+
   width: 100%;
   background-color: #552E10;
   display: flex;
@@ -120,9 +120,13 @@ body {
 
 
 
+
+
+
 /* About starts */
 
 .gastronomie-section {
+  margin-top: 120px;
     position: relative;
   width: 90%;
   display: flex;
@@ -197,6 +201,7 @@ border-top-right-radius: 50px ;
   margin-top: 30px;
   margin-bottom: 30px;
   
+  
 }
 
 
@@ -207,7 +212,7 @@ border-radius: 20px;
   height: 270px;
    overflow: hidden;
   position: relative;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0); 
+  box-shadow: 0px 0px 40px 0.1px grey;
 }
 
 
@@ -265,6 +270,8 @@ padding-top: 15px;
 .foodcards-mobile{
   display: none;
 }
+
+
 
 /* food cards end */
 @media (max-width:720px) {
@@ -415,6 +422,7 @@ border-radius: 30px;
    font-size: 0rem; 
   }
   .gastronomie-section {
+   margin-top:120px ;
     padding: 20px; 
   }
 

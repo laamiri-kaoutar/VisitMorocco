@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/destination.css">
     <link rel="stylesheet" href="/css/gastronomie.css" />
+   
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
@@ -14,52 +16,56 @@
   </head>
 
   <body>
-       <!-- header start -->
-       <header>
-        <div class="nav-box">
-          <nav class="nav">
-            <div>
-              <a href="index.html">
-                <img src="./images/logo.png" alt="">
-              </a>
-            </div>
-            <div class="nav-ul-1">
-              <input type="checkbox" id="sidebar-active">
-              <label for="sidebar-active" class="open-sidebar-button">
+
+
+    <!-- header start -->
+    <header>
+      <div class="nav-box">
+        <nav class="nav">
+          <div>
+            <a href="index.html">
+              <img src="./images/logo.png" alt="">
+            </a>
+          </div>
+          <div class="nav-ul-1">
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+              <svg class="svg-x" xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+              </svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+              <label for="sidebar-active" class="close-sidebar-button">
                 <svg class="svg-x" xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
-                  <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                  <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                 </svg>
               </label>
-              <label id="overlay" for="sidebar-active"></label>
-              <div class="links-container">
-                <label for="sidebar-active" class="close-sidebar-button">
-                  <svg class="svg-x" xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
-                    <path
-                      d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                  </svg>
-                </label>
-                <div class="nav-for-ul">
-                  <div>
-                    <ul class="ul-1">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="destination.html">Destinations</a></li>
-                      <li><a href="gastronomie.html">Gastronomie</a></li>
-                      <li><a href="FAQ.html">FAQ</a></li>
-                    </ul>
-                  </div>
-                  <div>
-                    <ul class="ul-2">
-                      <li class="ul-2-1"><a href="#">Login</a></li>
-                      <li class="ul-2-2"><a href="#">Sign up</a></li>
-                    </ul>
-                  </div>
+              <div class="nav-for-ul">
+                <div>
+                  <ul class="ul-1">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destination.html">Destinations</a></li>
+                    <li><a href="gastronomie.html">Gastronomie</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="ul-2">
+                    <li class="ul-2-1"><a href="#">Login</a></li>
+                    <li class="ul-2-2"><a href="#">Sign up</a></li>
+                  </ul>
                 </div>
               </div>
             </div>
-          </nav>
-        </div>
-      </header>
-    <!-- header finish -->
+          </div>
+        </nav>
+      </div>
+    </header>
+  <!-- header finish -->
+
+
     <!-- about section start -->
     <section class="gastronomie-section">
       <div class="background"></div>
@@ -360,5 +366,48 @@
         </div>
       </div>
     </section>
+
+
+    <footer>
+      <div class="footer-contaner">
+          <div class="textQuickLinks">
+              <h1>Quick Links</h1>
+              <div>
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Distinations</a></li>
+                      <li><a href="#">Gastronomie</a></li>
+                      <li><a href="#">FAQ</a></li>
+                  </ul>
+              </div>
+
+          </div>
+          <div class="line-h"></div>
+          <div class="textQuickLinks">
+              <h1>Social Medias</h1>
+              <div>
+                  <ul>
+                      <li><a href="#"> <i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                      <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                      <li><a href="#"><i class="fa-brands fa-x-twitter"></i> Twitter </a></li>
+                  </ul>
+              </div>
+
+          </div>
+          <div class="line-h"></div>
+          <div class="textQuickLinks">
+              <h1>Languages</h1>
+              <div>
+                  <select>
+                      <option value="English ">English </option>
+                      <option value="French">French</option>
+                      <option value="Arabic">Arabic</option>
+                  </select>
+              </div>
+
+          </div>
+      </div>
+      <p>Copyright © 2024 by CodeShogun</p>
+  </footer>
   </body>
 </html>
