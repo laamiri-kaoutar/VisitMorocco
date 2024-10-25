@@ -132,7 +132,7 @@ main {
 }
 
 .image_div {
-    background-image: url("/images/file.jpg");
+    background-image: url("../images/file.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
