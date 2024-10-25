@@ -149,7 +149,7 @@ main {
     width: 16.5rem;
     height: 2rem;
     border-radius: 30px;
-    border: 1px solid white;
+    border: 2px solid #230902;
 
 }
 
@@ -160,6 +160,11 @@ main {
     background-color: white;
     width: 5rem;
     height: 2rem;
+}
+#send:hover{
+    color: #552E10;
+    cursor: pointer;
+    border: 2px solid #552E10;
 }
 
 .text_section {
@@ -186,6 +191,7 @@ details summary {
 details {
     width: 80%;
 }
+
 
 .test {
     height: 83%;
