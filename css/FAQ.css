@@ -203,11 +203,14 @@ details {
 }
 
 
-.test {
+.text_serach_section {
+    gap: 11%;
     height: 83%;
     width: 90%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+
 }
 
 footer {
