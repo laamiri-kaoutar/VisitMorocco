@@ -12,13 +12,14 @@ body {
 }
 
 /* <!-- header start --> */
-.nav-box{
+.nav-box {
     width: 100%;
     background-color: #552E10;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .nav {
     width: 95%;
     height: 88px;
@@ -62,12 +63,13 @@ body {
     color: #552E10;
 }
 
-.ul-2-2 a{
+.ul-2-2 a {
     border-radius: 12px;
     border: 1px solid #FFF;
     background: #552E10;
     padding: 8px;
 }
+
 /* <!-- header finish --> */
 main {
     width: 100%;
@@ -75,7 +77,8 @@ main {
     flex-direction: column;
     align-items: center;
 }
-#header_text{
+
+#header_text {
     color: white;
     font-size: 3.5rem;
     font-weight: bold;
@@ -107,17 +110,19 @@ main {
     display: flex;
     flex-direction: column;
     width: 90%;
-    height: 29.9375rem; 
+    min-width: 29.9375rem;
     flex-shrink: 0;
     background-color: rgb(255, 255, 255);
     justify-content: center;
     align-items: center;
     border-radius: 0px 0px 30px 30px;
 }
-.question_section{
+
+.question_section {
     width: 90%;
     gap: 3rem;
-    height: 24.4375rem; /* Converted from 391px */
+    margin-block: 20px;
+    padding-block: 50px;
     flex-shrink: 0;
     background-color: #230902;
     border-bottom-left-radius: 30px;
@@ -127,17 +132,19 @@ main {
     align-items: flex-start;
     justify-content: center
 }
-.questions{
+
+.questions {
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.answer{
+
+.answer {
     max-width: 70%;
 }
 
-#search_text{
+#search_text {
     background-color: white;
     width: 16.5rem;
     height: 2rem;
@@ -145,7 +152,8 @@ main {
     border: 1px solid white;
 
 }
-#send{
+
+#send {
     border-radius: 29px;
     text-align: center;
     align-content: center;
@@ -153,97 +161,123 @@ main {
     width: 5rem;
     height: 2rem;
 }
-.text_section{
+
+.text_section {
     width: 50%;
 }
-.search_section{
+
+.search_section {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 3rem;
 }
 
-p{
+p {
     color: aliceblue;
 }
-details summary{
+
+details summary {
     color: aliceblue;
     list-style: none;
+    cursor: pointer;
 }
-details{
+
+details {
     width: 80%;
 }
-.test{
+
+.test {
     height: 83%;
     width: 90%;
     display: flex;
     flex-direction: column;
 }
-footer
-{
-  width: 100%;
-  background-color: #552E10;
-  color: #fff;
-  min-width: 359px;
-  padding: 16px 0;
+
+footer {
+    width: 100%;
+    background-color: #552E10;
+    color: #fff;
+    min-width: 359px;
+    padding: 16px 0;
 }
 
-footer h1
-{
-  font-size: 1.563rem;
-}
-footer p
-{
-  margin-top: 10PX;
-  text-align: center;
-  font-size: 1.25rem;
+footer h1 {
+    font-size: 1.563rem;
 }
 
-
-
-.footer-contaner
-{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  
-
-}
-.textQuickLinks
-{
-  height: 204px;
-
-  display: flex;
-  flex-direction:column;
-  gap: 32px;
+footer p {
+    margin-top: 10PX;
+    text-align: center;
+    font-size: 1.25rem;
 }
 
-.textQuickLinks div ul{
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.textQuickLinks div ul li a
-{
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.25rem;
-  height: 30px;
+
+
+.footer-contaner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+
 }
 
-.textQuickLinks div select
-{
- font-size: 1.25rem;
- width: 130PX;
+.textQuickLinks {
+    height: 204px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
-.line-h
-{
-  width: 1px;
-  height: 200px;
-  background-color: #fff;
+.textQuickLinks div ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.textQuickLinks div ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    height: 30px;
+}
+
+.textQuickLinks div select {
+    font-size: 1.25rem;
+    width: 130PX;
+}
+
+.line-h {
+    width: 1px;
+    height: 200px;
+    background-color: #fff;
 }
 
 /* end footer */
+
+/* media Queri */
+
+@media (max-width:768px) {
+    .answer {
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    #header_text {
+        font-size: 37px;
+    }
+
+    .text_section {
+        margin-block: 20px;
+        width: 100%;
+    }
+    .question_section_container{
+        min-width: 100%;
+    }
+    .image_div{
+        width: 100%;
+    }
+}
