@@ -52,10 +52,6 @@ body {
     background-size:contain;
     object-fit: cover;
     object-position: center;
-
-
-
-
 }
 .slider-image
 {
@@ -157,19 +153,19 @@ body {
   border-radius: 32px;
 }
 
-#fes{
+.fes{
   background-image: url("../images/fes.png");
 }
-#sawira{
+.sawira{
   background-image: url("../images/sawira.png");
 }
-#chaouen{
+.chaouen{
   background-image: url("../images/chouen.png");
 }
-#agadir{
+.agadir{
   background-image: url("../images/agadir.png");
 }
-#casa{
+.casa{
   background-image: url("../images/mosque.png");
 }
 
@@ -265,11 +261,22 @@ body {
  input[type="radio"][id="page1"]:checked ~ .four {
   display: none;
 }
+input[type="radio"][id="page0"]:checked ~ .sex,
+input[type="radio"][id="page0"]:checked ~ .five,
+input[type="radio"][id="page0"]:checked ~ .four {
+ display: none;
+}
 input[type="radio"][id="page2"]:checked ~ .one,
 input[type="radio"][id="page2"]:checked ~ .two,
 input[type="radio"][id="page2"]:checked ~ .tree {
   display: none;
 }
+input[type="radio"][id="page3"]:checked ~ .one,
+input[type="radio"][id="page3"]:checked ~ .two,
+input[type="radio"][id="page3"]:checked ~ .tree {
+  display: none;
+}
+
 
  .pagination label {
   margin: 1rem 0 0 0;
@@ -288,8 +295,9 @@ input[type="radio"][id="page2"]:checked ~ .tree {
 .pagination label:last-child {
   border: none;
 }
-
+input#page0:checked ~ .pagination label[for="page1"],
 input#page1:checked ~ .pagination label[for="page1"],
+input#page3:checked ~ .pagination label[for="page2"],
 input#page2:checked ~ .pagination label[for="page2"] {
   transition: .8s;
   background-color: #552e10;
