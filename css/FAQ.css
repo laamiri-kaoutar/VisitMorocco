@@ -93,7 +93,7 @@ main {
 }
 
 .image_div {
-    background-image: url("/VisitMorocco/images/file.jpg");
+    background-image: url("/images/file.jpg");
     width: 90%;
     height: 29.9375rem;
     background-color: bisque;
@@ -134,7 +134,7 @@ main {
 }
 
 .questions {
-    width: 80%;
+    min-width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -149,8 +149,12 @@ main {
     width: 16.5rem;
     height: 2rem;
     border-radius: 30px;
-    border: 2px solid #230902;
+    border: 2px solid #C68A48;
 
+}
+#search_text:focus{
+    border: 4px solid #C68A48;
+    outline: none;
 }
 
 #send {
@@ -160,11 +164,13 @@ main {
     background-color: white;
     width: 5rem;
     height: 2rem;
+    color: #552E10;
+    border: 2px solid #C68A48;
 }
 #send:hover{
     color: #552E10;
     cursor: pointer;
-    border: 2px solid #552E10;
+    border: 4px solid #C68A48;
 }
 
 .text_section {
@@ -175,7 +181,7 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 3rem;
+    gap: 3%;
 }
 
 p {
