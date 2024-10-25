@@ -6,22 +6,30 @@
     <meta name="viewport" content="width, initial-scale=1.0">
     <title>F A Q</title>
     <link rel="stylesheet" href="css/FAQ.css">
-    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <!-- header start -->
-    <header>
+    <!-- <header>
         <div class="nav-box">
             <nav class="nav">
                 <a href="#">
                     <img src="./images/logo.png" alt="">
                 </a>
                 <ul class="ul-1">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Destinations</a></li>
-                    <li><a href="#">Gastronomie</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destination.html">Destinations</a></li>
+                    <li><a href="gastronomie.html">Gastronomie</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
                 </ul>
                 <ul class="ul-2">
                     <li class="ul-2-1"><a href="#">Login</a></li>
@@ -29,30 +37,118 @@
                 </ul>
             </nav>
         </div>
-    </header>
+    </header> -->
     <!-- header finish -->
 
     <!-- main start -->
     <main>
         <div class="main_div">
             <div class="image_div">
-                <div class="text_section">
-                    <p id="header_text">frequently asked</p>
-                    <p id="header_text">question</p>
-                </div>
-                <div class="search_section">
-                    <input name="text" type="text" id="search_text" placeholder="ASK ME ..."> </label>
-                   
+                <div class="test">
+                    <div class="text_section">
+                        <h1 id="header_text">frequently asked question</h1>
+                    </div>
+                    <div class="search_section">
+                        <input name="text" type="text" id="search_text" placeholder="    ASK ME ...">
+                        <a id="send">Send</a>
+
+                    </div>
                 </div>
             </div>
             <div class="question_section_container">
                 <div class="question_section">
+                    <div class="questions">
+                        <details>
+                            <summary><i class="fa-solid fa-plus"></i> What is the best time to visit Morocco?</summary>
+                            <p>The best time to visit Morocco is in spring (March to May) and fall
+                                (September to
+                                November) when the weather is mild and pleasant, perfect for exploring cities and
+                                outdoor activities. Summer can be very hot, while winter may be chilly in the mountains.
+                            </p>
+                        </details>
+                    </div>
+
+                    <div class="questions">
+                        <details>
+                            <summary><i class="fa-solid fa-plus"></i> What languages are spoken in Morocco?</summary>
+                            <p>In Morocco, the official languages are Arabic and Amazigh. French is also widely spoken,
+                                especially in urban areas and for business, education, and government. English is
+                                increasingly common among younger people and in tourist areas.</p>
+                        </details>
+
+                    </div>
+
+                    <div class="questions">
+                        <details>
+                            <summary><i class="fa-solid fa-plus"></i> What currency is used in Morocco, and can I use credit cards?</summary>
+                            <p>The currency used in Morocco is the Moroccan dirham (MAD). Credit cards are widely
+                                accepted in larger cities, hotels, and restaurants, but it's a good idea to carry some
+                                cash for smaller establishments and rural areas. ATMs are readily available in urban
+                                centers.</p>
+                        </details>
+
+                    </div>
+
+                    <div class="questions">
+                        <details>
+                            <summary><i class="fa-solid fa-plus"></i> What cultural etiquette should I be aware of when visiting Morocco?</summary>
+                            <p>The best time to visit Morocco is in spring (March to May) and fall (September to
+                                November) when the weather is mild and pleasant, perfect for exploring cities and
+                                outdoor activities. Summer can be very hot, while winter may be chilly in the mountains.
+                            </p>
+                        </details>
+
+                    </div>
 
                 </div>
             </div>
         </div>
     </main>
-     <!-- main End -->
+    <!-- main End -->
+
+    <!-- footer -->
+    <!-- <footer>
+        <div class="footer-contaner">
+          <div class="textQuickLinks">
+            <h1>Quick Links</h1>
+            <div>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Distinations</a></li>
+                <li><a href="#">Gastronomie</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+  
+          </div>
+          <div class="line-h"></div>
+          <div class="textQuickLinks">
+            <h1>Social Medias</h1>
+            <div>
+              <ul>
+                <li><a href="#"> <i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li><a href="#"><i class="fa-brands fa-x-twitter"></i> Twitter </a></li>
+              </ul>
+            </div>
+  
+          </div>
+          <div class="line-h"></div>
+          <div class="textQuickLinks">
+            <h1>Languages</h1>
+            <div>
+              <select>
+                <option value="English ">English </option>
+                <option value="French">French</option>
+                <option value="Arabic">Arabic</option>
+            </select>
+            </div>
+  
+          </div>
+        </div>
+        <p>Copyright © 2024 by CodeShogun</p>
+      </footer>
+       -->
 </body>
 
 </html>
