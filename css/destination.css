@@ -51,11 +51,7 @@ body {
     border-radius: 25px;
     background-size:contain;
     object-fit: cover;
-    object-position: center;
-
-
-
-
+    object-position: center
 }
 .slider-image
 {
@@ -78,6 +74,8 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  gap: 0px;
+
   /* top: 87px; */
 }
 
@@ -118,14 +116,23 @@ body {
     font-size: 4rem;
 }
 
-.next_image a
-{
-    color: #fff;
-
-}
 
 
 /* css slider */
+.slider-image input[type="radio"]
+{
+  display: none;
+}
+
+input[type="radio"][id="imag1"]:checked ~  .images2
+{
+ display: none;
+}
+input[type="radio"][id="imag2"]:checked ~  .images1
+{
+ display: none;
+}
+
 
 /* end City Carousel Section */
 
@@ -295,3 +302,79 @@ footer p
 }
 
 /* end footer */
+
+
+/* media */
+
+@media only screen and (max-width: 541px) {
+
+.image_slider
+{
+  height: 300px;
+}
+  .texte-image-swep1 {
+    width: 80%;
+    position: absolute;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  height: 300px;
+ 
+    /* top: 87px; */
+  }
+
+  
+  .texte-image-swep1 p {
+    width: 80%;
+    font-size: 0.9rem;
+
+    /* text-align: center; */
+  }
+
+
+  .image_slider img
+  {
+    border-radius: 25px;
+ 
+    height: 100%;
+
+  }
+
+  /* footer media */
+  .textQuickLinks 
+  {
+    height: 130px;
+  gap: 18px;
+
+  }
+  footer h1
+{
+  font-size: 1rem;
+}
+
+.textQuickLinks div ul li a
+{
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+
+}
+.textQuickLinks div select
+{
+ font-size: 0.7rem;
+ width: 68px;
+}
+footer p
+{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.line-h
+{
+  height: 120px;
+}
+}
