@@ -12,6 +12,10 @@ body {
   align-items: center;
   flex-direction: column;
 }
+header
+{
+  z-index: 5 ;
+}
 
 /* start City Carousel Section */
 
@@ -19,6 +23,8 @@ body {
 {
     width: 90%;
     margin-bottom: 20px;
+    margin-top: 120px;
+
 }
 
 /* image style */
