@@ -132,6 +132,7 @@ main {
 }
 
 .image_div {
+    margin-top: 10%;
     background-image: url("../images/file.jpg");
     background-size: cover;
     background-repeat: no-repeat;
