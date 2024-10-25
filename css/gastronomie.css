@@ -310,7 +310,10 @@ border-radius: 30px;
 
 @media (max-width: 500px) {
 
-
+  .next_image 
+  {
+   font-size: 0rem; 
+  }
   .gastronomie-section {
     padding: 20px; 
   }
