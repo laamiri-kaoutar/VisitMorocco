@@ -157,7 +157,7 @@ main {
 }
 
 #search_text:focus {
-    border: 4px solid #C68A48;
+    border: 2px solid #C68A48;
     outline: none;
 }
 
@@ -175,7 +175,7 @@ main {
 #send:hover {
     color: #552E10;
     cursor: pointer;
-    border: 4px solid #C68A48;
+    border: 2px solid #C68A48;
 }
 
 .text_section {
