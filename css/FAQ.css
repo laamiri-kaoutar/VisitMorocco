@@ -94,6 +94,9 @@ main {
 
 .image_div {
     background-image: url("/images/file.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 90%;
     height: 29.9375rem;
     background-color: bisque;
@@ -182,6 +185,7 @@ main {
     flex-direction: row;
     align-items: center;
     gap: 3%;
+    flex-wrap: wrap;
 }
 
 p {
@@ -273,13 +277,16 @@ footer p {
 /* media Queri */
 
 @media (max-width:768px) {
+    .text_section{
+        width: 80%;
+    }
     .answer {
         font-size: 10px;
         font-weight: bold;
     }
 
     #header_text {
-        font-size: 37px;
+        font-size: 30px;
     }
 
     .text_section {
@@ -291,5 +298,9 @@ footer p {
     }
     .image_div{
         width: 100%;
+        
+    }
+    #search_text {
+        width: 55%;
     }
 }
